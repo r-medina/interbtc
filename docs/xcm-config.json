@@ -35,7 +35,7 @@
 	"parachains": [
 		{
 			"bin": "/usr/local/bin/interbtc-parachain",
-			"id": "2000",
+			"id": "2121",
 			"balance": "1000000000000000000000",
 			"nodes": [
 				{
@@ -50,35 +50,9 @@
 				}
 			],
 			"chain": "rococo-local"
-		},
-		{
-			"bin": "/usr/local/bin/interbtc-parachain",
-			"id": "3000",
-			"balance": "1000000000000000000000",
-			"nodes": [
-				{
-					"wsPort": 9999,
-					"port": 31300,
-					"name": "alice",
-					"flags": [
-						"--rpc-port=9990",
-						"--",
-						"--execution=wasm"
-					]
-				}
-			],
-			"chain": "rococo-local"
 		}
 	],
 	"simpleParachains": [],
-	"hrmpChannels": [
-		{
-			"sender": 2000,
-			"recipient": 3000,
-			"maxCapacity": 8,
-			"maxMessageSize": 512
-		}
-	],
 	"types": {},
 	"finalization": false
 }
